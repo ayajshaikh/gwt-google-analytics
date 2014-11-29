@@ -38,9 +38,9 @@ public class GAnalytics {
 	 * @return
 	 */
 	private static native String setAnalyticsParams(String trackingId) /*-{
-		var _gaq = _gaq || [];
-		_gaq.push([ '_setAccount', trackingId ]);
-		_gaq.push([ '_trackPageview' ]);
+		 $wnd._gaq =  $wnd._gaq || [];
+		 $wnd._gaq.push([ '_setAccount', trackingId ]);
+		 $wnd._gaq.push([ '_trackPageview' ]);
 	}-*/;
 
 	/**
